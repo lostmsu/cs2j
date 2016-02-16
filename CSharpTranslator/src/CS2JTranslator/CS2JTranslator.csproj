@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CS2JTranslator</RootNamespace>
     <AssemblyName>cs2j</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Twiglet.CS2J.Translator.Driver</StartupObject>
@@ -67,6 +68,7 @@
     <None Include="..\CSharpParser\cs.g">
       <Link>CSharpParser\cs.g</Link>
     </None>
+    <None Include="app.config" />
     <None Include="CS2JTransform\JavaMaker.g" />
     <None Include="CS2JTransform\JavaPrettyPrint.g" />
     <None Include="CS2JTransform\NetMaker.g" />
