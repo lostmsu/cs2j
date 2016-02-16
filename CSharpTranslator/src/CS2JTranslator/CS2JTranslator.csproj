@@ -280,6 +280,13 @@
     <Content Include="NetFramework\System\ArgumentOutOfRangeException.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>java -Xmx512m -jar $(ProjectDir)..\..\jar\antlr-3.3.jar -Xconversiontimeout 15000 -make -verbose $(ProjectDir)..\CSharpParser\cs.g -o $(ProjectDir)..\CSharpParser
+java -Xmx512m -jar $(ProjectDir)..\..\jar\antlr-3.3.jar -Xconversiontimeout 15000 -make -verbose -lib $(ProjectDir)..\CSharpParser $(ProjectDir)CS2JTransform\TemplateExtracter.g -o $(ProjectDir)CS2JTransform
+java -Xmx512m -jar $(ProjectDir)..\..\jar\antlr-3.3.jar -Xconversiontimeout 15000 -make -verbose -lib $(ProjectDir)..\CSharpParser $(ProjectDir)CS2JTransform\JavaMaker.g -o $(ProjectDir)CS2JTransform
+java -Xmx512m -jar $(ProjectDir)..\..\jar\antlr-3.3.jar -Xconversiontimeout 15000 -make -verbose -lib $(ProjectDir)..\CSharpParser $(ProjectDir)CS2JTransform\NetMaker.g -o $(ProjectDir)CS2JTransform
+java -Xmx512m -jar $(ProjectDir)..\..\jar\antlr-3.3.jar -Xconversiontimeout 15000 -make -verbose -lib $(ProjectDir)..\CSharpParser $(ProjectDir)CS2JTransform\JavaPrettyPrint.g -o $(ProjectDir)CS2JTransform</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
