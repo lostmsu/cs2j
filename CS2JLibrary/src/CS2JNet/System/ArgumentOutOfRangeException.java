@@ -74,5 +74,7 @@ public class ArgumentOutOfRangeException extends ArgumentException {
 		super(arg0, p, arg1);
 	}
 
-
+	public ArgumentOutOfRangeException(String argName, Object argument, String message){
+		super(argName, argument, message);
+	}
 }

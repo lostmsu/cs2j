@@ -67,6 +67,11 @@ public class ArgumentException extends IllegalArgumentException {
 		setParam(arg1);
 	}
 
+	public ArgumentException(String argName, Object argValue, String message){
+		super(message);
+		setParam(argName);
+	}
+
 	/**
 	 * @param arg0  the detail message
 	 * @param p     the parameter name

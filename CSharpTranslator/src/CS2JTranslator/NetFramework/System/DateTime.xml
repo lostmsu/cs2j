@@ -1,8 +1,8 @@
 <Class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.twigletsoftware.com:schemas:txtemplate:1:0" has_boxed_rep="true">
   <Imports>
-    <Import>org.joda.time.DateTime</Import>
+    <Import>java.util.Date</Import>
   </Imports>
-  <Java>DateTime</Java>
+  <Java>Date</Java>
   <Name>System.DateTime</Name>
   <Uses/>
   <Casts/>

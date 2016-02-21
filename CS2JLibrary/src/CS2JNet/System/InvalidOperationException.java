@@ -24,7 +24,7 @@ package CS2JNet.System;
  * @author keving
  *
  */
-public class InvalidOperationException extends SystemException {
+public class InvalidOperationException extends RuntimeException {
 	
 	public InvalidOperationException() {
 		
