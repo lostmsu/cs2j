@@ -86,10 +86,7 @@
       <Return>System.Int32</Return>
     </Method>
     <Method>
-      <Imports>
-        <Import>java.text.NumberFormat</Import>
-      </Imports>
-      <Java>NumberFormat.getInstance(${provider}).parse(${dStr}).intValue()</Java>
+      <Java>Integer.parseInt(${dStr})</Java>
       <Params>
         <Param>
           <Type>System.String</Type>
