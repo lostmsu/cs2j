@@ -37,7 +37,7 @@ public class Group {
 		return match;
 	}
 	/**
-	 * @param matcher the matcher to set
+	 * @param match the matcher to set
 	 */
 	public void setMatch(Match match) {
 		this.match = match;

@@ -127,8 +127,8 @@ public class NetSocket {
 	/***
 	 * 
 	 * @param data
-	 * @param length
-	 * @param none
+	 * @param size
+	 * @param socketFlags
 	 * @return number pf bytes sent
 	 * @throws IOException 
 	 * @throws NotImplementedException 
@@ -170,8 +170,8 @@ public class NetSocket {
 	/***
 	 * 
 	 * @param data
-	 * @param length
-	 * @param none
+	 * @param size
+	 * @param socketFlags
 	 * @return number pf bytes sent
 	 * @throws IOException 
 	 * @throws NotImplementedException 
