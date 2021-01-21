@@ -1,6 +1,7 @@
 bin/
 obj/
 #build/
+/CS2JLibrary/target/
 .settings/
 test-results/
 *.csproj.user
